@@ -1,0 +1,7 @@
+<h1> <%= @title %> </h1>
+<p><%= @mag %></p>
+<%= form_tag(controller: "helo", action: "index") do %>
+  <%= select_tag('si',
+     options_for_select(["Windows", "Macos", 'Linux'] )) %>
+  <%= submit_tag("Click")  %>
+<% end %>
